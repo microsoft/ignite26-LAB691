@@ -35,7 +35,7 @@ Fill in the sections below yourself, then:
 ## 🔥LAB691: Build an AI-ready data foundation with Microsoft OneLake
 ### Session description
 
-Add your session description here. Keep it concise — 2-3 sentences about what attendees will learn and why it matters.
+Learn how to unify and govern your data estate with Microsoft OneLake. In this hands-on lab, you'll connect data from multiple sources, explore zero-copy data access patterns, discover and share data across teams, and apply governance controls to create trusted, reusable data assets. Leave with practical skills for preparing data for analytics, AI, and intelligent applications.
 
 ### 🚀 Getting started
 
