@@ -20,34 +20,30 @@ You will leave with:
 
 - Microsoft Fabric free account
 - A Fabric workspace with a Lakehouse you can edit
-- Local copy of this repo and generated sample data
+- Local copy of this repo, including the sample data
 - (Optional) permission to create OneLake shortcuts
 
 ## Lab flow and timing (75 min)
 
 1. **0-10 min**: Setup, upload data, and create Lakehouse folders  
 2. **10-20 min**: Ingest profile data and create shortcut for orders  
-3. **20-35 min**: Create Delta tables + optional AI-powered feedback transform (preview)  
+3. **20-35 min**: Transform feedback with AI-powered shortcuts (preview)  
 4. **35-55 min**: Spark feature engineering for customer-level metrics  
 5. **55-65 min**: Polars segmentation  
 6. **65-75 min**: Power BI Customer 360 report + notebook app
 
 ---
 
-## Step 0 - Generate sample data locally (before Fabric)
+## Step 0 - Locate the included sample data
 
-From this repository root:
+The sample data is already included in this repository; no generation script is needed. Clone or download the repository, then locate these files under [data/raw](../data/raw/):
 
-```powershell
-python .\scripts\generate_sample_data.py
-```
+- [Customer profiles](../data/raw/customers.csv)
+- [Orders](../data/raw/orders.parquet)
+- [Customer feedback text files](../data/raw/feedback/)
+- [Support cases](../data/raw/support_cases.json)
 
-Expected outputs:
-
-- `data/raw/customers.csv`
-- `data/raw/orders.parquet`
-- `data/raw/feedback/*.txt`
-- `data/raw/support_cases.json`
+Review the [dataset overview](../data/README.md) for formats, fields, and relationships. Keep these files available for upload in Step 1.
 
 ---
 
@@ -106,7 +102,7 @@ Use AI-powered shortcut transformations to turn the customer feedback text files
 
 - This feature is in **public preview**. You need a Fabric capacity or trial supporting Lakehouse workloads, a **Contributor** or higher workspace role, and a [supported region](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/regional-support).
 - The input must be a folder of `.txt` files. Use the feedback folder uploaded in Step 1, `Files/raw/feedback`, as the OneLake source.
-- If the AI transformation options are unavailable, continue with the optional notebook in 3B as a fallback.
+- If the AI transformation options are unavailable, continue with the notebook in Step 4 as a fallback.
 
 #### Create the sentiment analysis transformation
 
