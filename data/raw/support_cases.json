@@ -1,0 +1,1650 @@
+[
+  {
+    "case_id": "CASE000001",
+    "customer": "CUST0006",
+    "opened_date": "2024-07-17",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000002",
+    "customer": "CUST0006",
+    "opened_date": "2024-03-14",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000003",
+    "customer": "CUST0008",
+    "opened_date": "2024-09-07",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000004",
+    "customer": "CUST0008",
+    "opened_date": "2025-08-01",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000005",
+    "customer": "CUST0009",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000006",
+    "customer": "CUST0009",
+    "opened_date": "2023-08-21",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000007",
+    "customer": "CUST0009",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000008",
+    "customer": "CUST0010",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000009",
+    "customer": "CUST0012",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000010",
+    "customer": "CUST0013",
+    "opened_date": "2024-06-10",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000011",
+    "customer": "CUST0016",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000012",
+    "customer": "CUST0018",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000013",
+    "customer": "CUST0018",
+    "opened_date": "2025-10-08",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000014",
+    "customer": "CUST0018",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000015",
+    "customer": "CUST0019",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000016",
+    "customer": "CUST0023",
+    "opened_date": "2025-08-10",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000017",
+    "customer": "CUST0023",
+    "opened_date": "2026-04-01",
+    "status": "Closed",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000018",
+    "customer": "CUST0025",
+    "opened_date": "2026-04-24",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000019",
+    "customer": "CUST0025",
+    "opened_date": "2025-09-01",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000020",
+    "customer": "CUST0027",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000021",
+    "customer": "CUST0033",
+    "opened_date": "2026-08-18",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000022",
+    "customer": "CUST0033",
+    "opened_date": "2024-02-26",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000023",
+    "customer": "CUST0033",
+    "opened_date": "2024-08-01",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000024",
+    "customer": "CUST0035",
+    "opened_date": "2025-04-06",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000025",
+    "customer": "CUST0037",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000026",
+    "customer": "CUST0038",
+    "opened_date": "2023-11-22",
+    "status": "Closed",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000027",
+    "customer": "CUST0038",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000028",
+    "customer": "CUST0038",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000029",
+    "customer": "CUST0040",
+    "opened_date": "2026-02-18",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000030",
+    "customer": "CUST0040",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000031",
+    "customer": "CUST0041",
+    "opened_date": "2024-12-21",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000032",
+    "customer": "CUST0041",
+    "opened_date": "2025-10-19",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000033",
+    "customer": "CUST0043",
+    "opened_date": "2024-08-05",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000034",
+    "customer": "CUST0044",
+    "opened_date": "2026-01-21",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000035",
+    "customer": "CUST0044",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000036",
+    "customer": "CUST0047",
+    "opened_date": "2023-10-21",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000037",
+    "customer": "CUST0047",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000038",
+    "customer": "CUST0048",
+    "opened_date": "2025-07-02",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000039",
+    "customer": "CUST0048",
+    "opened_date": "2025-11-18",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000040",
+    "customer": "CUST0048",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000041",
+    "customer": "CUST0048",
+    "opened_date": "2026-07-14",
+    "status": "Escalated",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000042",
+    "customer": "CUST0049",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000043",
+    "customer": "CUST0049",
+    "opened_date": "2024-09-19",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000044",
+    "customer": "CUST0051",
+    "opened_date": "2025-01-13",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000045",
+    "customer": "CUST0053",
+    "opened_date": "2026-08-29",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000046",
+    "customer": "CUST0053",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000047",
+    "customer": "CUST0055",
+    "opened_date": "2024-01-19",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000048",
+    "customer": "CUST0055",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000049",
+    "customer": "CUST0055",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000050",
+    "customer": "CUST0056",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000051",
+    "customer": "CUST0057",
+    "opened_date": "2025-01-08",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000052",
+    "customer": "CUST0057",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000053",
+    "customer": "CUST0057",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000054",
+    "customer": "CUST0057",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000055",
+    "customer": "CUST0058",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000056",
+    "customer": "CUST0058",
+    "opened_date": "2025-11-21",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000057",
+    "customer": "CUST0061",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000058",
+    "customer": "CUST0062",
+    "opened_date": "2024-05-23",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000059",
+    "customer": "CUST0062",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000060",
+    "customer": "CUST0062",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000061",
+    "customer": "CUST0065",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000062",
+    "customer": "CUST0065",
+    "opened_date": "2024-09-28",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000063",
+    "customer": "CUST0067",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000064",
+    "customer": "CUST0068",
+    "opened_date": "2025-06-24",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000065",
+    "customer": "CUST0068",
+    "opened_date": "2026-10-13",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000066",
+    "customer": "CUST0069",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000067",
+    "customer": "CUST0069",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000068",
+    "customer": "CUST0070",
+    "opened_date": "2024-08-19",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000069",
+    "customer": "CUST0073",
+    "opened_date": "2025-04-19",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000070",
+    "customer": "CUST0074",
+    "opened_date": "2025-06-30",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000071",
+    "customer": "CUST0075",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000072",
+    "customer": "CUST0075",
+    "opened_date": "2025-12-28",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000073",
+    "customer": "CUST0076",
+    "opened_date": "2024-12-05",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000074",
+    "customer": "CUST0076",
+    "opened_date": "2025-10-24",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000075",
+    "customer": "CUST0077",
+    "opened_date": "2025-08-31",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000076",
+    "customer": "CUST0077",
+    "opened_date": "2024-08-13",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000077",
+    "customer": "CUST0078",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000078",
+    "customer": "CUST0078",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000079",
+    "customer": "CUST0080",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000080",
+    "customer": "CUST0083",
+    "opened_date": "2025-03-29",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000081",
+    "customer": "CUST0089",
+    "opened_date": "2026-03-23",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000082",
+    "customer": "CUST0094",
+    "opened_date": "2026-09-24",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000083",
+    "customer": "CUST0098",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Product Bug",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000084",
+    "customer": "CUST0100",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000085",
+    "customer": "CUST0100",
+    "opened_date": "2024-02-22",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000086",
+    "customer": "CUST0102",
+    "opened_date": "2026-04-17",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000087",
+    "customer": "CUST0104",
+    "opened_date": "2024-08-04",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000088",
+    "customer": "CUST0105",
+    "opened_date": "2026-01-31",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000089",
+    "customer": "CUST0105",
+    "opened_date": "2026-08-16",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000090",
+    "customer": "CUST0108",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000091",
+    "customer": "CUST0108",
+    "opened_date": "2025-07-03",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000092",
+    "customer": "CUST0108",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000093",
+    "customer": "CUST0110",
+    "opened_date": "2025-06-11",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000094",
+    "customer": "CUST0110",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000095",
+    "customer": "CUST0112",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000096",
+    "customer": "CUST0112",
+    "opened_date": "2022-07-24",
+    "status": "Closed",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000097",
+    "customer": "CUST0112",
+    "opened_date": "2026-01-05",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000098",
+    "customer": "CUST0114",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000099",
+    "customer": "CUST0116",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000100",
+    "customer": "CUST0121",
+    "opened_date": "2026-05-21",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000101",
+    "customer": "CUST0123",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000102",
+    "customer": "CUST0124",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000103",
+    "customer": "CUST0124",
+    "opened_date": "2024-04-24",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000104",
+    "customer": "CUST0125",
+    "opened_date": "2024-08-03",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000105",
+    "customer": "CUST0126",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000106",
+    "customer": "CUST0128",
+    "opened_date": "2024-02-16",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000107",
+    "customer": "CUST0128",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000108",
+    "customer": "CUST0132",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000109",
+    "customer": "CUST0132",
+    "opened_date": "2024-11-08",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000110",
+    "customer": "CUST0133",
+    "opened_date": "2024-02-29",
+    "status": "Closed",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000111",
+    "customer": "CUST0133",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000112",
+    "customer": "CUST0133",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000113",
+    "customer": "CUST0137",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000114",
+    "customer": "CUST0139",
+    "opened_date": "2024-06-16",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000115",
+    "customer": "CUST0142",
+    "opened_date": "2026-10-14",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000116",
+    "customer": "CUST0143",
+    "opened_date": "2026-07-20",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000117",
+    "customer": "CUST0144",
+    "opened_date": "2025-08-05",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000118",
+    "customer": "CUST0145",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000119",
+    "customer": "CUST0148",
+    "opened_date": "2026-09-29",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000120",
+    "customer": "CUST0148",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000121",
+    "customer": "CUST0148",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000122",
+    "customer": "CUST0151",
+    "opened_date": "2023-02-06",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000123",
+    "customer": "CUST0158",
+    "opened_date": "2025-08-07",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000124",
+    "customer": "CUST0162",
+    "opened_date": "2025-11-29",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000125",
+    "customer": "CUST0162",
+    "opened_date": "2026-05-06",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000126",
+    "customer": "CUST0168",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000127",
+    "customer": "CUST0169",
+    "opened_date": "2025-12-07",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000128",
+    "customer": "CUST0169",
+    "opened_date": "2026-04-11",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000129",
+    "customer": "CUST0170",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000130",
+    "customer": "CUST0171",
+    "opened_date": "2026-02-17",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000131",
+    "customer": "CUST0172",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000132",
+    "customer": "CUST0172",
+    "opened_date": "2024-06-25",
+    "status": "Closed",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000133",
+    "customer": "CUST0173",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000134",
+    "customer": "CUST0174",
+    "opened_date": "2026-09-15",
+    "status": "Escalated",
+    "issue_type": "Product Bug",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000135",
+    "customer": "CUST0175",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000136",
+    "customer": "CUST0176",
+    "opened_date": "2025-10-04",
+    "status": "Closed",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000137",
+    "customer": "CUST0179",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000138",
+    "customer": "CUST0179",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000139",
+    "customer": "CUST0181",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000140",
+    "customer": "CUST0181",
+    "opened_date": "2025-12-20",
+    "status": "Escalated",
+    "issue_type": "Product Bug",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000141",
+    "customer": "CUST0181",
+    "opened_date": "2025-11-19",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000142",
+    "customer": "CUST0183",
+    "opened_date": "2024-05-05",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000143",
+    "customer": "CUST0187",
+    "opened_date": "2024-11-17",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000144",
+    "customer": "CUST0188",
+    "opened_date": "2025-03-12",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000145",
+    "customer": "CUST0189",
+    "opened_date": "2026-02-22",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000146",
+    "customer": "CUST0189",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000147",
+    "customer": "CUST0189",
+    "opened_date": "2026-08-28",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000148",
+    "customer": "CUST0190",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000149",
+    "customer": "CUST0191",
+    "opened_date": "2025-11-23",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000150",
+    "customer": "CUST0191",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000151",
+    "customer": "CUST0192",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000152",
+    "customer": "CUST0197",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000153",
+    "customer": "CUST0201",
+    "opened_date": "2024-04-02",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000154",
+    "customer": "CUST0201",
+    "opened_date": "2026-09-18",
+    "status": "Closed",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000155",
+    "customer": "CUST0202",
+    "opened_date": "2025-10-14",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000156",
+    "customer": "CUST0202",
+    "opened_date": "2024-01-03",
+    "status": "Closed",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000157",
+    "customer": "CUST0202",
+    "opened_date": "2026-07-09",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000158",
+    "customer": "CUST0203",
+    "opened_date": "2025-07-18",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000159",
+    "customer": "CUST0204",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000160",
+    "customer": "CUST0204",
+    "opened_date": "2026-09-17",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000161",
+    "customer": "CUST0205",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000162",
+    "customer": "CUST0205",
+    "opened_date": "2026-07-28",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000163",
+    "customer": "CUST0205",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000164",
+    "customer": "CUST0205",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000165",
+    "customer": "CUST0206",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000166",
+    "customer": "CUST0206",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000167",
+    "customer": "CUST0206",
+    "opened_date": "2026-04-04",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000168",
+    "customer": "CUST0207",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000169",
+    "customer": "CUST0207",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000170",
+    "customer": "CUST0207",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000171",
+    "customer": "CUST0207",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000172",
+    "customer": "CUST0209",
+    "opened_date": "2026-03-04",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000173",
+    "customer": "CUST0213",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000174",
+    "customer": "CUST0213",
+    "opened_date": "2025-12-17",
+    "status": "Escalated",
+    "issue_type": "Product Bug",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000175",
+    "customer": "CUST0214",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000176",
+    "customer": "CUST0214",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000177",
+    "customer": "CUST0214",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000178",
+    "customer": "CUST0215",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000179",
+    "customer": "CUST0215",
+    "opened_date": "2024-03-07",
+    "status": "Closed",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000180",
+    "customer": "CUST0215",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000181",
+    "customer": "CUST0217",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000182",
+    "customer": "CUST0218",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000183",
+    "customer": "CUST0218",
+    "opened_date": "2026-09-20",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000184",
+    "customer": "CUST0220",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000185",
+    "customer": "CUST0221",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000186",
+    "customer": "CUST0223",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000187",
+    "customer": "CUST0227",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000188",
+    "customer": "CUST0227",
+    "opened_date": "2024-06-25",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000189",
+    "customer": "CUST0228",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Performance",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000190",
+    "customer": "CUST0230",
+    "opened_date": "2026-07-07",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000191",
+    "customer": "CUST0230",
+    "opened_date": "2023-03-15",
+    "status": "Escalated",
+    "issue_type": "Feature Request",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000192",
+    "customer": "CUST0235",
+    "opened_date": "2026-08-01",
+    "status": "Open",
+    "issue_type": "Billing",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000193",
+    "customer": "CUST0237",
+    "opened_date": "2025-07-01",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000194",
+    "customer": "CUST0237",
+    "opened_date": "2024-02-09",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000195",
+    "customer": "CUST0237",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000196",
+    "customer": "CUST0238",
+    "opened_date": "2026-10-20",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000197",
+    "customer": "CUST0241",
+    "opened_date": "2023-09-13",
+    "status": "Open",
+    "issue_type": "Product Bug",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000198",
+    "customer": "CUST0241",
+    "opened_date": "2024-02-14",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000199",
+    "customer": "CUST0242",
+    "opened_date": "2024-06-10",
+    "status": "Escalated",
+    "issue_type": "Integration",
+    "priority": "Medium"
+  },
+  {
+    "case_id": "CASE000200",
+    "customer": "CUST0246",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000201",
+    "customer": "CUST0246",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Integration",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000202",
+    "customer": "CUST0246",
+    "opened_date": "2026-02-02",
+    "status": "Escalated",
+    "issue_type": "How-to",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000203",
+    "customer": "CUST0247",
+    "opened_date": "2026-10-20",
+    "status": "Closed",
+    "issue_type": "Integration",
+    "priority": "High"
+  },
+  {
+    "case_id": "CASE000204",
+    "customer": "CUST0248",
+    "opened_date": "2026-10-20",
+    "status": "Open",
+    "issue_type": "Feature Request",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000205",
+    "customer": "CUST0250",
+    "opened_date": "2024-06-08",
+    "status": "Escalated",
+    "issue_type": "Product Bug",
+    "priority": "Low"
+  },
+  {
+    "case_id": "CASE000206",
+    "customer": "CUST0250",
+    "opened_date": "2024-05-18",
+    "status": "Escalated",
+    "issue_type": "Billing",
+    "priority": "High"
+  }
+]

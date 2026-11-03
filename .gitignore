@@ -427,3 +427,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Local ADIA session context
+/.adia-context.md
+/.adias-context.md
