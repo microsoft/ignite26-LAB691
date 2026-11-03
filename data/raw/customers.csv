@@ -1,0 +1,251 @@
+customer,segment,location,signup_date
+CUST0001,SMB,"New York, USA",2026-02-27
+CUST0002,Consumer,"London, UK",2022-10-13
+CUST0003,Mid-Market,"Seattle, USA",2025-04-24
+CUST0004,SMB,"New York, USA",2022-07-11
+CUST0005,Consumer,"New York, USA",2025-02-23
+CUST0006,Consumer,"Sydney, Australia",2023-03-28
+CUST0007,SMB,"Berlin, Germany",2026-07-16
+CUST0008,Mid-Market,"Austin, USA",2025-11-30
+CUST0009,SMB,"Berlin, Germany",2022-11-15
+CUST0010,Consumer,"Toronto, Canada",2022-07-29
+CUST0011,Consumer,"Seattle, USA",2024-01-06
+CUST0012,Mid-Market,"Berlin, Germany",2026-07-11
+CUST0013,Consumer,"Bangalore, India",2025-01-03
+CUST0014,Consumer,"Sydney, Australia",2022-06-11
+CUST0015,SMB,"Toronto, Canada",2025-03-28
+CUST0016,Consumer,"Seattle, USA",2022-04-04
+CUST0017,Mid-Market,"Berlin, Germany",2022-06-13
+CUST0018,Mid-Market,"Seattle, USA",2024-02-18
+CUST0019,Consumer,"Toronto, Canada",2022-11-30
+CUST0020,SMB,"London, UK",2025-10-04
+CUST0021,Consumer,"Seattle, USA",2025-06-01
+CUST0022,SMB,"London, UK",2022-12-01
+CUST0023,SMB,"Berlin, Germany",2025-08-03
+CUST0024,Mid-Market,"London, UK",2025-11-03
+CUST0025,Consumer,"New York, USA",2023-04-15
+CUST0026,Mid-Market,"Toronto, Canada",2024-04-01
+CUST0027,Consumer,"London, UK",2025-03-07
+CUST0028,Enterprise,"Toronto, Canada",2023-03-12
+CUST0029,Mid-Market,"Sydney, Australia",2025-08-09
+CUST0030,SMB,"Berlin, Germany",2022-10-13
+CUST0031,Consumer,"Berlin, Germany",2026-03-10
+CUST0032,SMB,"Sydney, Australia",2024-01-12
+CUST0033,Consumer,"Austin, USA",2024-11-09
+CUST0034,SMB,"New York, USA",2022-08-13
+CUST0035,Consumer,"Austin, USA",2026-06-11
+CUST0036,Mid-Market,"Seattle, USA",2024-02-28
+CUST0037,SMB,"Bangalore, India",2024-12-19
+CUST0038,Consumer,"New York, USA",2025-10-25
+CUST0039,Mid-Market,"Berlin, Germany",2026-04-24
+CUST0040,SMB,"Seattle, USA",2023-08-25
+CUST0041,SMB,"Bangalore, India",2022-01-07
+CUST0042,Enterprise,"Berlin, Germany",2024-10-22
+CUST0043,Mid-Market,"Seattle, USA",2025-07-04
+CUST0044,Consumer,"London, UK",2022-11-10
+CUST0045,SMB,"Austin, USA",2025-01-09
+CUST0046,Enterprise,"New York, USA",2025-05-11
+CUST0047,Consumer,"New York, USA",2022-08-18
+CUST0048,Enterprise,"Berlin, Germany",2023-05-06
+CUST0049,Consumer,"Seattle, USA",2022-06-25
+CUST0050,Mid-Market,"Seattle, USA",2026-04-07
+CUST0051,SMB,"Austin, USA",2022-09-20
+CUST0052,Mid-Market,"Austin, USA",2023-06-27
+CUST0053,SMB,"Sydney, Australia",2023-03-10
+CUST0054,Enterprise,"London, UK",2025-12-31
+CUST0055,Consumer,"Toronto, Canada",2024-06-16
+CUST0056,Enterprise,"Bangalore, India",2022-09-05
+CUST0057,Consumer,"Seattle, USA",2023-11-24
+CUST0058,Consumer,"London, UK",2025-04-20
+CUST0059,Consumer,"Seattle, USA",2025-12-20
+CUST0060,SMB,"London, UK",2022-05-19
+CUST0061,Enterprise,"Toronto, Canada",2022-05-26
+CUST0062,SMB,"Berlin, Germany",2025-10-02
+CUST0063,SMB,"Austin, USA",2026-01-21
+CUST0064,Enterprise,"Bangalore, India",2023-05-13
+CUST0065,Mid-Market,"Sydney, Australia",2023-01-25
+CUST0066,Consumer,"Sydney, Australia",2023-12-27
+CUST0067,SMB,"Bangalore, India",2026-02-02
+CUST0068,Consumer,"Seattle, USA",2022-05-05
+CUST0069,SMB,"Toronto, Canada",2026-06-28
+CUST0070,Mid-Market,"London, UK",2023-01-28
+CUST0071,Consumer,"Bangalore, India",2022-10-15
+CUST0072,SMB,"Berlin, Germany",2024-08-05
+CUST0073,Consumer,"Seattle, USA",2024-06-26
+CUST0074,Mid-Market,"Seattle, USA",2022-04-14
+CUST0075,Mid-Market,"New York, USA",2022-07-11
+CUST0076,Enterprise,"London, UK",2022-12-07
+CUST0077,SMB,"Bangalore, India",2023-03-14
+CUST0078,Mid-Market,"New York, USA",2022-12-04
+CUST0079,SMB,"Sydney, Australia",2023-06-28
+CUST0080,Enterprise,"Bangalore, India",2023-08-08
+CUST0081,SMB,"Bangalore, India",2022-11-14
+CUST0082,Consumer,"London, UK",2022-04-30
+CUST0083,SMB,"New York, USA",2026-03-12
+CUST0084,Consumer,"New York, USA",2025-04-11
+CUST0085,SMB,"Austin, USA",2022-04-27
+CUST0086,Enterprise,"Seattle, USA",2023-01-16
+CUST0087,Consumer,"Seattle, USA",2025-10-14
+CUST0088,Mid-Market,"Sydney, Australia",2022-09-03
+CUST0089,Enterprise,"London, UK",2025-03-31
+CUST0090,SMB,"Seattle, USA",2024-05-08
+CUST0091,Mid-Market,"Toronto, Canada",2023-06-19
+CUST0092,Consumer,"Toronto, Canada",2023-05-04
+CUST0093,Consumer,"Austin, USA",2025-10-07
+CUST0094,SMB,"Bangalore, India",2023-10-10
+CUST0095,Enterprise,"Seattle, USA",2022-01-20
+CUST0096,SMB,"Seattle, USA",2022-05-31
+CUST0097,SMB,"Berlin, Germany",2022-09-29
+CUST0098,Enterprise,"Seattle, USA",2023-05-16
+CUST0099,SMB,"Austin, USA",2024-06-16
+CUST0100,Mid-Market,"Berlin, Germany",2025-06-06
+CUST0101,Enterprise,"New York, USA",2025-09-29
+CUST0102,Mid-Market,"Berlin, Germany",2025-09-20
+CUST0103,Consumer,"Austin, USA",2023-06-26
+CUST0104,Consumer,"Seattle, USA",2026-03-01
+CUST0105,SMB,"Berlin, Germany",2023-08-01
+CUST0106,SMB,"Toronto, Canada",2023-02-21
+CUST0107,Mid-Market,"Berlin, Germany",2024-11-01
+CUST0108,SMB,"New York, USA",2022-07-09
+CUST0109,SMB,"Berlin, Germany",2022-04-01
+CUST0110,Consumer,"Austin, USA",2025-07-28
+CUST0111,Enterprise,"Austin, USA",2026-02-27
+CUST0112,SMB,"Sydney, Australia",2025-02-22
+CUST0113,Consumer,"Seattle, USA",2025-11-16
+CUST0114,Enterprise,"New York, USA",2024-01-27
+CUST0115,SMB,"Austin, USA",2024-05-30
+CUST0116,Consumer,"Berlin, Germany",2024-01-17
+CUST0117,Enterprise,"New York, USA",2024-01-03
+CUST0118,Consumer,"London, UK",2025-09-27
+CUST0119,Consumer,"Sydney, Australia",2025-06-25
+CUST0120,Mid-Market,"London, UK",2022-11-29
+CUST0121,Enterprise,"Austin, USA",2024-04-24
+CUST0122,Consumer,"Toronto, Canada",2026-05-22
+CUST0123,Enterprise,"London, UK",2023-07-01
+CUST0124,Consumer,"Seattle, USA",2024-02-23
+CUST0125,Enterprise,"Bangalore, India",2023-04-01
+CUST0126,Consumer,"Bangalore, India",2023-12-18
+CUST0127,Consumer,"London, UK",2023-04-02
+CUST0128,Consumer,"London, UK",2024-03-27
+CUST0129,Consumer,"Seattle, USA",2026-05-03
+CUST0130,Consumer,"Sydney, Australia",2025-10-23
+CUST0131,Enterprise,"Toronto, Canada",2022-02-26
+CUST0132,Consumer,"Berlin, Germany",2023-01-01
+CUST0133,SMB,"Berlin, Germany",2022-03-20
+CUST0134,Consumer,"Sydney, Australia",2023-12-09
+CUST0135,Mid-Market,"Toronto, Canada",2024-06-12
+CUST0136,SMB,"Seattle, USA",2024-02-28
+CUST0137,Enterprise,"London, UK",2023-06-06
+CUST0138,Consumer,"Sydney, Australia",2022-01-04
+CUST0139,SMB,"London, UK",2024-01-16
+CUST0140,SMB,"Toronto, Canada",2025-06-30
+CUST0141,Consumer,"Seattle, USA",2026-01-14
+CUST0142,Enterprise,"Berlin, Germany",2025-09-27
+CUST0143,SMB,"Sydney, Australia",2025-11-28
+CUST0144,Consumer,"Austin, USA",2023-01-28
+CUST0145,SMB,"Sydney, Australia",2025-10-19
+CUST0146,Mid-Market,"Austin, USA",2025-06-14
+CUST0147,SMB,"Sydney, Australia",2025-01-27
+CUST0148,Mid-Market,"Berlin, Germany",2023-08-11
+CUST0149,Consumer,"Toronto, Canada",2024-08-10
+CUST0150,SMB,"London, UK",2024-11-12
+CUST0151,SMB,"Austin, USA",2025-09-11
+CUST0152,Consumer,"Toronto, Canada",2022-07-11
+CUST0153,Mid-Market,"London, UK",2025-10-09
+CUST0154,Consumer,"London, UK",2022-10-29
+CUST0155,Consumer,"London, UK",2024-08-31
+CUST0156,SMB,"Seattle, USA",2024-07-21
+CUST0157,SMB,"London, UK",2026-01-11
+CUST0158,Mid-Market,"Bangalore, India",2024-03-29
+CUST0159,Consumer,"New York, USA",2026-03-18
+CUST0160,Mid-Market,"Seattle, USA",2026-05-14
+CUST0161,SMB,"Austin, USA",2026-07-05
+CUST0162,Enterprise,"Bangalore, India",2022-04-13
+CUST0163,SMB,"Seattle, USA",2024-07-23
+CUST0164,Consumer,"Bangalore, India",2025-09-29
+CUST0165,SMB,"Toronto, Canada",2026-03-27
+CUST0166,Enterprise,"Sydney, Australia",2026-08-29
+CUST0167,Enterprise,"Bangalore, India",2022-11-22
+CUST0168,Mid-Market,"Bangalore, India",2024-07-10
+CUST0169,Consumer,"London, UK",2025-07-29
+CUST0170,Consumer,"Bangalore, India",2025-07-07
+CUST0171,Consumer,"Bangalore, India",2022-06-08
+CUST0172,Mid-Market,"London, UK",2023-07-11
+CUST0173,Consumer,"Seattle, USA",2022-10-11
+CUST0174,Consumer,"Sydney, Australia",2025-11-22
+CUST0175,Consumer,"London, UK",2022-05-12
+CUST0176,SMB,"Toronto, Canada",2025-01-16
+CUST0177,SMB,"New York, USA",2023-02-28
+CUST0178,Mid-Market,"Sydney, Australia",2026-04-26
+CUST0179,SMB,"New York, USA",2026-04-17
+CUST0180,SMB,"Bangalore, India",2022-01-13
+CUST0181,Enterprise,"Berlin, Germany",2026-03-24
+CUST0182,SMB,"Sydney, Australia",2025-01-07
+CUST0183,Mid-Market,"London, UK",2024-09-26
+CUST0184,Consumer,"Sydney, Australia",2024-09-21
+CUST0185,Consumer,"Toronto, Canada",2025-10-01
+CUST0186,Mid-Market,"Sydney, Australia",2026-01-23
+CUST0187,Consumer,"Bangalore, India",2022-09-19
+CUST0188,Enterprise,"New York, USA",2024-03-17
+CUST0189,SMB,"New York, USA",2022-06-21
+CUST0190,SMB,"Austin, USA",2024-08-03
+CUST0191,Consumer,"Berlin, Germany",2024-02-16
+CUST0192,Consumer,"Bangalore, India",2023-11-01
+CUST0193,Consumer,"Sydney, Australia",2023-07-24
+CUST0194,Mid-Market,"Sydney, Australia",2023-06-01
+CUST0195,Mid-Market,"Bangalore, India",2022-02-09
+CUST0196,Mid-Market,"New York, USA",2023-12-18
+CUST0197,Consumer,"Seattle, USA",2026-05-19
+CUST0198,Enterprise,"New York, USA",2026-03-25
+CUST0199,Consumer,"London, UK",2023-02-13
+CUST0200,Mid-Market,"Austin, USA",2023-05-04
+CUST0201,Consumer,"Seattle, USA",2025-03-01
+CUST0202,Enterprise,"Bangalore, India",2025-12-03
+CUST0203,Consumer,"Toronto, Canada",2022-12-10
+CUST0204,SMB,"Seattle, USA",2026-05-12
+CUST0205,Mid-Market,"Berlin, Germany",2022-08-10
+CUST0206,SMB,"Berlin, Germany",2025-03-25
+CUST0207,Mid-Market,"Sydney, Australia",2024-03-23
+CUST0208,Enterprise,"London, UK",2022-06-05
+CUST0209,SMB,"London, UK",2022-07-28
+CUST0210,Mid-Market,"Berlin, Germany",2025-11-02
+CUST0211,SMB,"Seattle, USA",2026-06-19
+CUST0212,Enterprise,"New York, USA",2023-12-13
+CUST0213,SMB,"Toronto, Canada",2022-05-22
+CUST0214,SMB,"Toronto, Canada",2022-01-26
+CUST0215,Mid-Market,"Bangalore, India",2022-08-05
+CUST0216,SMB,"Toronto, Canada",2025-07-25
+CUST0217,Enterprise,"Bangalore, India",2025-12-19
+CUST0218,Consumer,"Austin, USA",2026-02-11
+CUST0219,SMB,"Berlin, Germany",2025-06-15
+CUST0220,Mid-Market,"Bangalore, India",2024-08-10
+CUST0221,SMB,"Berlin, Germany",2023-10-23
+CUST0222,Mid-Market,"Seattle, USA",2023-07-26
+CUST0223,Enterprise,"London, UK",2026-03-17
+CUST0224,SMB,"Sydney, Australia",2023-11-20
+CUST0225,Consumer,"Toronto, Canada",2023-01-08
+CUST0226,SMB,"Toronto, Canada",2026-06-22
+CUST0227,Consumer,"Berlin, Germany",2025-05-05
+CUST0228,Mid-Market,"Berlin, Germany",2025-02-12
+CUST0229,Consumer,"London, UK",2022-06-25
+CUST0230,Consumer,"Sydney, Australia",2024-09-27
+CUST0231,SMB,"London, UK",2025-11-15
+CUST0232,SMB,"Bangalore, India",2024-07-06
+CUST0233,Mid-Market,"Seattle, USA",2023-08-26
+CUST0234,Consumer,"London, UK",2023-09-20
+CUST0235,Mid-Market,"Toronto, Canada",2024-08-27
+CUST0236,SMB,"Toronto, Canada",2024-05-21
+CUST0237,Enterprise,"Toronto, Canada",2023-12-22
+CUST0238,Mid-Market,"Berlin, Germany",2023-09-20
+CUST0239,Consumer,"Seattle, USA",2026-01-17
+CUST0240,Consumer,"Seattle, USA",2026-03-02
+CUST0241,SMB,"Austin, USA",2023-01-28
+CUST0242,Consumer,"Bangalore, India",2023-07-21
+CUST0243,Mid-Market,"Berlin, Germany",2022-07-25
+CUST0244,Mid-Market,"Berlin, Germany",2023-04-11
+CUST0245,SMB,"Berlin, Germany",2022-01-29
+CUST0246,Mid-Market,"Austin, USA",2023-07-16
+CUST0247,Consumer,"New York, USA",2025-02-07
+CUST0248,Consumer,"Austin, USA",2025-07-30
+CUST0249,Mid-Market,"Bangalore, India",2022-07-30
+CUST0250,Enterprise,"Berlin, Germany",2024-08-19
