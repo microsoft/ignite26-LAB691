@@ -1,21 +1,21 @@
 -- Run this in the Lakehouse SQL endpoint after creating the Delta tables.
 
-CREATE OR ALTER VIEW vw_customer_360 AS
+CREATE OR ALTER VIEW [vw_customer_360] AS
 SELECT
-    cs.customer,
-    cs.segment,
-    cs.location,
-    cs.signup_date,
-    cs.lifetime_value,
-    cs.order_count,
-    cs.order_frequency_per_month,
-    cs.days_since_last_purchase,
-    cs.average_sentiment,
-    cs.support_case_count,
-    cs.retention_risk,
-    cs.value_tier,
-    cs.engagement_tier
-FROM customer_segments cs;
+    [cs].[customer],
+    [cs].[segment],
+    [cs].[location],
+    [cs].[signup_date],
+    [cs].[lifetime_value],
+    [cs].[order_count],
+    [cs].[order_frequency_per_month],
+    [cs].[days_since_last_purchase],
+    [cs].[average_sentiment],
+    [cs].[support_case_count],
+    [cs].[retention_risk],
+    [cs].[value_tier],
+    [cs].[engagement_tier]
+FROM [lh_customer360].[dbo].[customer_segments] AS [cs];
 
 CREATE OR ALTER VIEW vw_sales_monthly AS
 SELECT
@@ -37,4 +37,3 @@ SELECT
     SUM(lifetime_value) AS segment_ltv
 FROM customer_segments
 GROUP BY segment, retention_risk;
-
