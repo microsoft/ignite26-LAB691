@@ -1,4 +1,9 @@
-# Workshop: Build a Customer 360 in 75 Minutes with OneLake and Fabric
+@lab.Title
+
+## Welcome to Your Lab Environment
+
+To begin, log into the virtual machine using the following credentials: +++@lab.VirtualMachine(Win11-Pro-Base).Password+++
+
 
 ## Audience and objective
 
@@ -18,10 +23,8 @@ You will leave with:
 
 ## Prerequisites
 
-- Microsoft Fabric free account
-- A Fabric workspace with a Lakehouse you can edit
-- Local copy of this repo, including the sample data
-- (Optional) permission to create OneLake shortcuts
+- Open the browser and download a local copy of the workshop from `https://github.com/microsoft/ignite26-LAB691/archive/refs/heads/main.zip`
+- From the Downloads folder, unzip the lab onto the desktop so it's easier to find
 
 ## Lab flow and timing (75 min)
 
@@ -34,65 +37,56 @@ You will leave with:
 
 ---
 
-## Step 0 - Locate the included sample data
+## Log in to Microsoft Fabric
 
-The sample data is already included in this repository; no generation script is needed. Clone or download the repository, then locate these files under [data/raw](../data/raw/):
+To start the lab:
+1. Open up browser
+2. With the address bar selected, click here: +++https://app.fabric.microsoft.com+++
+3. From the intstructions pane, swtich to the Resources tab
+4. Click Username to insert the email
+5. Click TAP to insert the temp password
+6. Switch back to the Instructions tab
 
-- [Customer profiles](../data/raw/customers.csv)
-- [Orders](../data/raw/orders.parquet)
-- [Customer feedback text files](../data/raw/feedback/)
-- [Support cases](../data/raw/support_cases.json)
+## Step 0 - Create Workspace and Locate the included sample data
 
-Review the [dataset overview](../data/README.md) for formats, fields, and relationships. Keep these files available for upload in Step 1.
+### Create a workspace
+1. Select **Workspaces** from the left nav
+2. Click **+ New Workspace** button
+3. Give your workspace a name and scroll down ensuring Workspace Type is set to *Fabric*
+4. Click **Apply** to create your new workspace
+
+### Locate sample data
+
+The sample data is included in a local folder on your desktop named *ignite26-LAB691* under the subfolder */data/raw*
+
+Data included:
+- [Customer profiles](https://github.com/microsoft/ignite26-LAB691/tree/main/data/raw/customers.csv)
+- [Orders](https://github.com/microsoft/ignite26-LAB691/tree/main/data/raw/orders.parquet)
+- [Customer feedback text files](https://github.com/microsoft/ignite26-LAB691/tree/main/data/raw/feedback/)
+- [Support cases](https://github.com/microsoft/ignite26-LAB691/tree/main/data/raw/support_cases.json)
+
+Review the [dataset overview](https://github.com/microsoft/ignite26-LAB691/tree/main/data/README.md) for formats, fields, and relationships. Keep these files available for upload in Step 1.
 
 ---
 
 ## Step 1 - Create Lakehouse structure
 
-1. In Fabric, create/open a workspace.
+1. In Fabric, select the new workspace you created (if not already selected) from the left nav.
 2. Create a new **Lakehouse** named `lh_customer360`.
-3. Under Files, create folders:
+3. Under Files, create subfolders:
    - `raw/customers`
    - `raw/orders`
    - `raw/feedback`
    - `raw/support`
 4. Upload these local files:
-   - `data/raw/customers.csv` -> `Files/raw/customers/`
-   - `data/raw/orders.parquet` -> `Files/raw/orders/`
-   - all files from `data/raw/feedback/` -> `Files/raw/feedback/`
-   - `data/raw/support_cases.json` -> `Files/raw/support/`
+   - data/raw/customers.csv -> Files/raw/customers/
+   - data/raw/orders.parquet -> Files/raw/orders/
+   - all files from data/raw/feedback/ -> Files/raw/feedback/
+   - data/raw/support_cases.json -> Files/raw/support/
 
 ---
 
-## Step 2 - Bring profiles and orders with OneLake shortcuts
-
-### 2A. Customer profiles
-
-Profiles are already in `Files/raw/customers`.
-
-### 2B. Orders via shortcut
-
-For the workshop story, use a shortcut for order data:
-
-1. In Lakehouse Files, select `raw/orders`.
-2. Create a **Shortcut** to an external location (ADLS/OneLake path) containing `orders.parquet`.
-
-   For a shortcut to another Fabric item in the same tenant, follow these steps based on [Create a same-tenant OneLake shortcut (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/onelake/shortcuts/create-onelake-shortcut):
-
-   1. Ensure a source Lakehouse in OneLake contains `orders.parquet` in a folder under **Files**. Use a source provided by your instructor, or upload the local file to a separate source Lakehouse that you can access.
-   2. In the destination Lakehouse, `lh_customer360`, right-click **Files > raw > orders** in the **Explorer** pane and select **New shortcut**.
-   3. In the shortcut dialog, choose **Microsoft OneLake** under **Internal sources**. OneLake is an internal Fabric source; do not select ADLS for this walkthrough.
-   4. Select the source Fabric item containing the order data, then select **Next**.
-   5. For **Connection method**, keep **Pass-through**, which uses each reader's own identity to access the source data. Readers need access to the source. If your instructor requires **Delegated identity** instead, select **Connect**, choose an existing connection or configure a new one, and select **Next**. See [Delegated authentication](https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcut-security#delegated-authentication) for that alternative.
-   6. Expand the source item's **Files** directory, select the folder containing `orders.parquet`, and select **Next**. Select the containing folder, not the individual Parquet file.
-   7. Review the selection. Use the edit action to name the shortcut `source_orders`, then select **Create**. This creates a shortcut inside the existing destination folder without replacing the uploaded file.
-   8. After the Explorer refreshes, open **Files > raw > orders > source_orders** and confirm that `orders.parquet` is visible. The shortcut's properties should show **Shortcut Type**. When loading orders in the next exercise, use `Files/raw/orders/source_orders/orders.parquet` to read through the shortcut rather than the uploaded copy.
-
-3. If shortcut setup is unavailable in your tenant/free environment, continue using uploaded `Files/raw/orders/orders.parquet`.
-
----
-
-## Step 3 - Transform feedback with AI-powered shortcuts
+## Step 2 - Transform feedback with AI-powered shortcuts
 
 ### Create sentiment analysis and PII redaction transformations
 
@@ -106,30 +100,17 @@ Use AI-powered shortcut transformations to turn the customer feedback text files
 
 #### Create the sentiment analysis transformation
 
-1. Open `lh_customer360`. In **Explorer**, start shortcut creation in **Tables**. For a schema-enabled Lakehouse, right-click the destination schema and select **New table shortcut**; otherwise use **New shortcut**. See the [table shortcut creation guidance](https://learn.microsoft.com/en-us/fabric/onelake/shortcuts/transformations#create-a-table-shortcut-with-data-transformation) for the destination workflow.
+1. Open `lh_customer360`. In **Explorer**, start shortcut creation in **Tables**. Right-click **dbo** and select **New table shortcut**; otherwise use **New shortcut**. Learn more in [table shortcut creation guidance](https://learn.microsoft.com/en-us/fabric/onelake/shortcuts/transformations#create-a-table-shortcut-with-data-transformation).
 2. Choose **Microsoft OneLake** under **Internal sources**. Select the Lakehouse containing the uploaded feedback files and select **Next**.
 3. Keep **Pass-through** as the connection method, then expand **Files > raw**, select the physical **feedback** folder, and select **Next**. Use the folder containing the `.txt` files, not an individual file or a folder containing only other shortcuts.
 4. During shortcut creation, choose the AI-powered **Sentiment analysis** transformation. This classifies the feedback as positive, negative, or neutral.
-5. Review **Include subfolders**. It is selected by default for new transformations. Clear it for this lab's flat feedback folder; keep it only if you also want to process text files in physical subfolders. Subfolder processing cannot be disabled after it is enabled.
+5. Review **Connect to access data**. It is created by default for new transformations. Click *Next* to continue.
 6. Review the destination and set the shortcut/output table name to `feedback_ai_sentiment`, keeping it separate from the optional notebook's tables. Select **Create**.
-7. Wait for the transformation output, then open the resulting Delta table under **Tables** and inspect its columns and sentiment results. The engine checks the source folder every two minutes; allow time for updates to appear.
-
-#### Create the PII redaction transformation
-
-1. Start a second shortcut in the destination **Tables** area using the same creation workflow.
-2. Choose **Microsoft OneLake**, select the source Lakehouse, and use **Pass-through**. Select the same physical **Files > raw > feedback** folder.
-3. During shortcut creation, choose **PII detection**. This is the documented transformation for finding and redacting personally identifiable information, such as names, phone numbers, and email addresses.
-4. Clear **Include subfolders** for the flat feedback folder, or keep it if physical subfolders should also be processed.
-5. Review the destination and name the shortcut/output table `feedback_ai_redacted`. Select **Create**.
-6. After processing completes, inspect the resulting Delta table and compare its redacted text with the source feedback. These sample files might not contain names, phone numbers, or email addresses, so some text may remain unchanged. Do not add real personal information just to test redaction.
-
-These are two independent transformations of the original feedback folder: sentiment analysis does not automatically use the redacted output. Redaction in the output also does not remove sensitive text from the source files; keep source access appropriately restricted and review the results before sharing them.
-
-The transformation engine keeps each output Delta table synchronized with new, modified, and deleted source files. Inspect the actual output schema before using these tables in downstream analysis; do not assume they match the notebook's schema or provide a numeric sentiment score.
+7. Wait for the transformation output, then open the resulting Delta table under **Tables** and inspect its columns and sentiment results. If you see *Unidentified* or *Unable to identify these objects as tables* error, select the ellipsis under *Tables* and hit **Refresh**.  You can check progress of the transform under *Notifications* (bell icon) at top of your Fabric window.
 
 ---
 
-## Step 4 - Build customer-level features in Spark
+## Step 3 - Build customer-level features in Spark
 
 In this step, you will use a Spark notebook to combine customer profiles, orders, feedback, and support cases into a customer-level feature table with measures of value, engagement, sentiment, and retention risk. Bringing these signals together creates a reusable foundation for customer segmentation and reporting, helping you identify valuable customers and those who may need attention.
 
@@ -164,19 +145,20 @@ The notebook includes fallback lexicon sentiment. Its `feedback_sentiment` table
 #### Import and configure the notebook
 
 1. Open the Fabric workspace containing `lh_customer360`.
-2. In the workspace toolbar, open the notebook import option (**Import notebook**; it may appear under **New** in your workspace layout).
-3. Browse to your local repository's `src/notebooks` folder and select `01_setup_lakehouse_features.ipynb`. Complete the import and open the new notebook item. See [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
-4. Choose the notebook experience based on the code, not the file extension:
+2. In the workspace toolbar, open the notebook import option **--> | Import** and select **Notebook**
+3. Browse to your local repository's `src/notebooks` folder and select `01_setup_lakehouse_features.ipynb`. Complete the import and open the new notebook item. Learn more [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
+4. Choose the notebook experience based on the code:
    - **For this notebook, use Spark with Python (PySpark).** It imports `pyspark.sql`, uses the `spark` session, and writes Delta tables with Spark. Do **not** switch it to the non-Spark Python experience.
-5. In the notebook's Lakehouse explorer, select **Add lakehouse**, choose the existing `lh_customer360`, and add it. Pin it as the **default Lakehouse** so the notebook's relative `Files/...` paths resolve correctly. If a session is already running when you change the default Lakehouse, restart it.
-6. Review the imported code and confirm that the customer, order, feedback, and support files from Step 1 are present. If you created the OneLake shortcut in Step 2B, change `orders_path` in the imported notebook to `Files/raw/orders/source_orders/orders.parquet`; otherwise keep `Files/raw/orders/orders.parquet` for the uploaded-file fallback.
-7. Select **Run all** and wait for the Spark execution to finish. Check for cell errors, then refresh the Lakehouse's **Tables** area and confirm the output tables are available, including `customer_features`.
+5. In the notebook's Lakehouse explorer, select **Add data items**, choose **From OneLake Catalog**
+6. Select the existing `lh_customer360` Lakehouse, and add it. Pin it as the **default Lakehouse** so the notebook's relative `Files/...` paths resolve correctly. If a session is already running when you change the default Lakehouse, restart it.
+7. Review the imported code and confirm that the customer, order, feedback, and support files from Step 1 are present.
+8. Select and run each cell and wait for the Spark execution to finish. Check for cell errors, then refresh the Lakehouse's **Tables** area and confirm the output tables are available, including `customer_features`.
 
 ---
 
-## Step 5 - Segment with Polars
+## Step 4 - Segment with Polars
 
-Use [02_polars_segmentation.ipynb](../src/notebooks/02_polars_segmentation.ipynb) to turn the customer features from Step 4 into actionable customer groups, helping you identify high-value customers and customers whose purchasing activity may need attention. This notebook only builds segmentation; the separate interactive app notebook is used in Step 7.
+Use [02_polars_segmentation.py](https://github.com/microsoft/ignite26-LAB691/tree/main/src/notebooks/02_polars_segmentation.ipynb) to turn the customer features from Step 4 into actionable customer groups, helping you identify high-value customers and customers whose purchasing activity may need attention. This notebook only builds segmentation; the separate interactive app notebook is used in Step 7.
 
 ### What the notebook does
 
@@ -193,18 +175,18 @@ Together, these tiers provide a reusable basis for reporting and prioritizing cu
 
 1. Complete Step 4 first. In `lh_customer360`, confirm that `customer_features` exists; this notebook reads that table.
 2. Open the Fabric workspace containing that Lakehouse. In the workspace toolbar, select **Import notebook** (it may appear under **New** in your workspace layout).
-3. Browse to your local repository's `src/notebooks` folder, select `02_polars_segmentation.ipynb`, and complete the import. Open the resulting notebook item. See [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
-4. **Use the Spark notebook experience with Python (PySpark), not the non-Spark Python experience.** Although the segmentation uses Polars, this notebook calls `spark.table()` and `spark.createDataFrame()` and uses Spark to save the Delta table. A `.py` extension does not mean the notebook is Python-only. For notebooks without Spark dependencies, choose **Python** instead; see [Use Python experience on Notebook (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/using-python-experience-on-notebook#how-to-access-a-python-notebook).
+3. Browse to your local repository's `src/notebooks` folder, select `02_polars_segmentation.ipynb`, and complete the import. Open the resulting notebook item. Learn more [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
+4. **Use the Spark notebook experience with Python (PySpark), not the non-Spark Python experience.** Although the segmentation uses Polars, this notebook calls `spark.table()` and `spark.createDataFrame()` and uses Spark to save the Delta table. Learn more [Use Python experience on Notebook (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/using-python-experience-on-notebook#how-to-access-a-python-notebook).
 5. In the notebook's Lakehouse explorer, select **Add lakehouse**, choose the existing `lh_customer360`, and pin it as the **default Lakehouse**. Restart an already-running session if you change its default Lakehouse.
 6. Review the code before running. It collects the feature table into driver memory for pandas and Polars, so this approach is intended for the small lab dataset rather than an arbitrarily large customer table. It also **overwrites** `customer_segments`; use your lab Lakehouse.
-7. Select **Run all**. If the Polars import fails because the package is missing, uncomment the provided `%pip install polars` line, run that installation cell, and rerun the notebook.
+7. Run each of the cells one at a time. If the Polars import fails because the package is missing, uncomment the provided `%pip install polars` line, run that installation cell, and rerun the notebook.
 8. Check that all cells finish successfully. Refresh the Lakehouse's **Tables** area and confirm that `customer_segments` exists and includes `value_tier` and `engagement_tier`. Review the displayed grouped customer counts.
 
 ---
 
-## Step 6 - Power BI Customer 360 report
+## Step 5 - Power BI Customer 360 report
 
-Use [customer_360_views.sql](../src/customer_360_views.sql) to create a reusable SQL reporting layer over the Delta tables prepared in Steps 4 and 5. The views give Power BI consistent customer details and sales and retention summaries, so you do not need to repeat those queries in each report. They are the reporting layer used in this exercise, not a requirement for querying the underlying tables directly.
+Use [customer_360_views.sql](https://github.com/microsoft/ignite26-LAB691/tree/main/src/customer_360_views.sql) to create a reusable SQL reporting layer over the Delta tables prepared in Steps 4 and 5. The views give Power BI consistent customer details and sales and retention summaries, so you do not need to repeat those queries in each report. They are the reporting layer used in this exercise, not a requirement for querying the underlying tables directly.
 
 ### What the SQL file does
 
@@ -220,14 +202,15 @@ Views store query definitions, not separate copies of the data. The script does 
 
 ### Create and verify the views
 
-1. Complete Steps 4 and 5. Open `lh_customer360` in Fabric and switch to its **SQL analytics endpoint**, not a Spark notebook or a separate SQL database.
-2. In the endpoint's Explorer, confirm that `customer_segments` and `orders` are visible under **Tables**. If they have just been created, allow time for the endpoint to synchronize their metadata and refresh the Explorer. You need permission to create views in this endpoint.
-3. Open the local repository file `src/customer_360_views.sql` in your editor. You will copy its SQL into the endpoint's query editor; you do not need to upload the file to Lakehouse **Files**.
-4. To find and connect to the correct endpoint, return to your Fabric workspace and open `lh_customer360`. In the upper-right experience selector, switch from **Lakehouse** to **SQL analytics endpoint**. Alternatively, open the workspace item named `lh_customer360` whose type is **SQL analytics endpoint**, rather than the Lakehouse item. Fabric creates this endpoint automatically with the Lakehouse. Opening it in the browser uses your signed-in Fabric account; no separate server connection is needed for this exercise. Confirm that Explorer shows the expected tables before opening a query.
-5. Select **New SQL query**. Copy the first statement, starting with `CREATE OR ALTER VIEW vw_customer_360` and ending with `FROM customer_segments cs;`, into the query editor and select **Run**.
-6. In a separate query tab, copy and run the full `CREATE OR ALTER VIEW vw_sales_monthly` statement. Repeat in another tab for `vw_retention_summary`. Run each view definition separately: a `CREATE VIEW` statement must start its own query batch, so do not run all three statements together as a single batch.
-7. If the source tables use a schema other than your default schema, qualify the table references in the copied SQL with the schema shown in Explorer, for example `dbo.customer_segments` or `dbo.orders` when they are under `dbo`. Resolve any missing-table or permission errors before continuing.
-8. Refresh **Views** in Explorer and confirm that all three views appear. In a new query tab, run these checks, qualifying the view names with their schema if needed:
+1. Open `lh_customer360` in Fabric and switch to its **SQL analytics endpoint**, by selecting it from the drop down in the top, right corner of the Fabric UI.
+2. In the endpoint's Explorer, confirm that `customer_segments` and `orders` are visible under **Schemas > dbo > Tables**. If they have just been created, allow time for the endpoint to synchronize their metadata and refresh the Explorer. You need permission to create views in this endpoint.
+3. Select **New SQL query** drop down (down arrow) from the main screen and choose **New SQL query (from file)**
+4. Open the local repository file `https://github.com/microsoft/ignite26-LAB691/tree/main/src/customer_360_views.sql` in your editor. You will copy its SQL into the endpoint's query editor; you do not need to upload the file to Lakehouse **Files**.
+5. To find and connect to the correct endpoint, return to your Fabric workspace and open `lh_customer360`. In the upper-right experience selector, switch from **Lakehouse** to **SQL analytics endpoint**. Alternatively, open the workspace item named `lh_customer360` whose type is **SQL analytics endpoint**, rather than the Lakehouse item. Fabric creates this endpoint automatically with the Lakehouse. Opening it in the browser uses your signed-in Fabric account; no separate server connection is needed for this exercise. Confirm that Explorer shows the expected tables before opening a query.
+6. Select **New SQL query**. Copy the first statement, starting with `CREATE OR ALTER VIEW vw_customer_360` and ending with `FROM customer_segments cs;`, into the query editor and select **Run**.
+7. In a separate query tab, copy and run the full `CREATE OR ALTER VIEW vw_sales_monthly` statement. Repeat in another tab for `vw_retention_summary`. Run each view definition separately: a `CREATE VIEW` statement must start its own query batch, so do not run all three statements together as a single batch.
+8. If the source tables use a schema other than your default schema, qualify the table references in the copied SQL with the schema shown in Explorer, for example `dbo.customer_segments` or `dbo.orders` when they are under `dbo`. Resolve any missing-table or permission errors before continuing.
+9. Refresh **Views** in Explorer and confirm that all three views appear. In a new query tab, run these checks, qualifying the view names with their schema if needed:
 
    ```sql
    SELECT TOP (10) * FROM vw_customer_360;
@@ -257,9 +240,9 @@ Use `vw_customer_360` and `vw_sales_monthly` for the customer and sales model. T
 
 ---
 
-## Step 7 - Data app experience
+## Step 6 - Data app experience
 
-Use [03_customer360_notebook_app.py](../src/notebooks/03_customer360_notebook_app.py) to explore the existing Customer 360 tables as an interactive data app. The notebook creates interactive controls where users choose:
+Use [03_customer360_notebook_app.py](https://github.com/microsoft/ignite26-LAB691/tree/main/src/notebooks/03_customer360_notebook_app.py) to explore the existing Customer 360 tables as an interactive data app. The notebook creates interactive controls where users choose:
 
 - a segment, and/or
 - a specific customer
@@ -290,3 +273,5 @@ And immediately see:
 3. **AI-ready feedback**: sentiment and redaction without building a custom model.
 4. **Actionability**: retention risk and segment insights tied to real customers.
 5. **Business readiness**: dashboard + app for analyst and account teams.
+
+---
