@@ -35,6 +35,6 @@ Use this reference index alongside the [attendee instructions](../instructions/R
 
 These repository files are also linked from the attendee instructions:
 
-- [Polars segmentation notebook](../src/notebooks/02_polars_segmentation.py) - Builds the `customer_segments` Delta table in Step 5.
+- [Polars segmentation notebook](../src/notebooks/02_polars_segmentation.ipynb) - Builds the `customer_segments` Delta table in Step 5.
 - [Customer 360 SQL views](../src/customer_360_views.sql) - Defines customer detail, monthly sales, and retention summary views in Step 6.
 - [Customer 360 notebook app](../src/notebooks/03_customer360_notebook_app.py) - Provides interactive customer, transaction, and feedback exploration in Step 7.

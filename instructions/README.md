@@ -165,8 +165,8 @@ The notebook includes fallback lexicon sentiment. Its `feedback_sentiment` table
 
 1. Open the Fabric workspace containing `lh_customer360`.
 2. In the workspace toolbar, open the notebook import option (**Import notebook**; it may appear under **New** in your workspace layout).
-3. Browse to your local repository's `src/notebooks` folder and select `01_setup_lakehouse_features.py`. Fabric supports importing `.py` source files directly, so you do not need to convert it to `.ipynb`. Complete the import and open the new notebook item. See [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
-4. Choose the notebook experience based on the code, not the `.py` file extension:
+3. Browse to your local repository's `src/notebooks` folder and select `01_setup_lakehouse_features.ipynb`. Complete the import and open the new notebook item. See [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
+4. Choose the notebook experience based on the code, not the file extension:
    - **For this notebook, use Spark with Python (PySpark).** It imports `pyspark.sql`, uses the `spark` session, and writes Delta tables with Spark. Do **not** switch it to the non-Spark Python experience.
 5. In the notebook's Lakehouse explorer, select **Add lakehouse**, choose the existing `lh_customer360`, and add it. Pin it as the **default Lakehouse** so the notebook's relative `Files/...` paths resolve correctly. If a session is already running when you change the default Lakehouse, restart it.
 6. Review the imported code and confirm that the customer, order, feedback, and support files from Step 1 are present. If you created the OneLake shortcut in Step 2B, change `orders_path` in the imported notebook to `Files/raw/orders/source_orders/orders.parquet`; otherwise keep `Files/raw/orders/orders.parquet` for the uploaded-file fallback.
@@ -176,7 +176,7 @@ The notebook includes fallback lexicon sentiment. Its `feedback_sentiment` table
 
 ## Step 5 - Segment with Polars
 
-Use [02_polars_segmentation.py](../src/notebooks/02_polars_segmentation.py) to turn the customer features from Step 4 into actionable customer groups, helping you identify high-value customers and customers whose purchasing activity may need attention. This notebook only builds segmentation; the separate interactive app notebook is used in Step 7.
+Use [02_polars_segmentation.ipynb](../src/notebooks/02_polars_segmentation.ipynb) to turn the customer features from Step 4 into actionable customer groups, helping you identify high-value customers and customers whose purchasing activity may need attention. This notebook only builds segmentation; the separate interactive app notebook is used in Step 7.
 
 ### What the notebook does
 
@@ -193,7 +193,7 @@ Together, these tiers provide a reusable basis for reporting and prioritizing cu
 
 1. Complete Step 4 first. In `lh_customer360`, confirm that `customer_features` exists; this notebook reads that table.
 2. Open the Fabric workspace containing that Lakehouse. In the workspace toolbar, select **Import notebook** (it may appear under **New** in your workspace layout).
-3. Browse to your local repository's `src/notebooks` folder, select `02_polars_segmentation.py`, and complete the import. Open the resulting notebook item. Fabric supports importing `.py` source files directly; see [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
+3. Browse to your local repository's `src/notebooks` folder, select `02_polars_segmentation.ipynb`, and complete the import. Open the resulting notebook item. See [Import existing notebooks (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook#import-existing-notebooks).
 4. **Use the Spark notebook experience with Python (PySpark), not the non-Spark Python experience.** Although the segmentation uses Polars, this notebook calls `spark.table()` and `spark.createDataFrame()` and uses Spark to save the Delta table. A `.py` extension does not mean the notebook is Python-only. For notebooks without Spark dependencies, choose **Python** instead; see [Use Python experience on Notebook (Microsoft Learn)](https://learn.microsoft.com/en-us/fabric/data-engineering/using-python-experience-on-notebook#how-to-access-a-python-notebook).
 5. In the notebook's Lakehouse explorer, select **Add lakehouse**, choose the existing `lh_customer360`, and pin it as the **default Lakehouse**. Restart an already-running session if you change its default Lakehouse.
 6. Review the code before running. It collects the feature table into driver memory for pandas and Polars, so this approach is intended for the small lab dataset rather than an arbitrarily large customer table. It also **overwrites** `customer_segments`; use your lab Lakehouse.
