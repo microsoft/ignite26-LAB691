@@ -1,4 +1,4 @@
-@lab.Title
+# LAB691: Build an AI-ready data foundation with Microsoft OneLake
 
 ## Welcome to Your Lab Environment
 
