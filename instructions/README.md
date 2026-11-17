@@ -264,6 +264,8 @@ And immediately see:
 6. Choose a **Segment** and/or **Customer** and select **Refresh** to update the overview, recent transactions, and voice-of-customer feedback. Select **All** to clear a filter. Both filters apply together.
 7. Check that the displayed data matches your selection. Transaction and feedback details are limited to the first 25 customers in the filtered overview, ordered by lifetime value, with up to 100 rows displayed in each detail section.
 
+**If controls or tables are missing:** Expand the cell output and rerun the app cell in an interactive Fabric browser session. Saved widget output is not interactive until the cell runs again. Keep Fabric's built-in `display` function (do not import `display` from `IPython.display`), and display each object in a separate call. Fabric does not support `ipywidgets.Output`, so this app renders controls and Spark tables directly in the cell output and redisplays the controls on refresh. See [Fabric IPython widget limitations](https://learn.microsoft.com/en-us/fabric/data-engineering/author-execute-notebook#known-limitations).
+
 ---
 
 ## What we demonstrated in this workshop
