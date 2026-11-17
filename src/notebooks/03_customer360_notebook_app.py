@@ -3,14 +3,14 @@
 
 # %% [markdown]
 # # 03 - Customer 360 Notebook App
-# Run with Python (PySpark) after 02_polars_segmentation.py.
+# Run with Python (PySpark) after 02_polars_segmentation.ipynb.
 # Set the default Lakehouse containing customer_segments, customers, orders,
 # and feedback_sentiment.
 
 # %%
 from pyspark.sql import functions as F
 import ipywidgets as widgets
-from IPython.display import display, clear_output
+from IPython.display import clear_output
 
 # %% [markdown]
 # ## 1) Build notebook app controls
@@ -30,61 +30,60 @@ customer_dropdown = widgets.Dropdown(
     description="Customer:",
 )
 run_button = widgets.Button(description="Refresh", button_style="primary")
-output = widgets.Output()
 
 ui = widgets.HBox([segment_dropdown, customer_dropdown, run_button])
-display(ui, output)
 
 
 def render_view(_):
-    with output:
-        clear_output(wait=True)
+    clear_output(wait=True)
+    # Fabric does not support widgets.Output; keep controls in the cell output.
+    display(ui)
 
-        seg = segment_dropdown.value
-        cust = customer_dropdown.value
+    seg = segment_dropdown.value
+    cust = customer_dropdown.value
 
-        query = spark.table("customer_segments")
-        if seg != "All":
-            query = query.filter(F.col("segment") == seg)
-        if cust != "All":
-            query = query.filter(F.col("customer") == cust)
+    query = spark.table("customer_segments")
+    if seg != "All":
+        query = query.filter(F.col("segment") == seg)
+    if cust != "All":
+        query = query.filter(F.col("customer") == cust)
 
-        selected = query.orderBy(F.desc("lifetime_value"))
-        print("Customer overview")
-        display(selected.select(
-            "customer",
-            "segment",
-            "location",
-            "lifetime_value",
-            "order_frequency_per_month",
-            "days_since_last_purchase",
-            "average_sentiment",
-            "support_case_count",
-            "retention_risk",
-            "value_tier",
-            "engagement_tier",
-        ))
+    selected = query.orderBy(F.desc("lifetime_value"))
+    print("Customer overview")
+    display(selected.select(
+        "customer",
+        "segment",
+        "location",
+        "lifetime_value",
+        "order_frequency_per_month",
+        "days_since_last_purchase",
+        "average_sentiment",
+        "support_case_count",
+        "retention_risk",
+        "value_tier",
+        "engagement_tier",
+    ))
 
-        selected_customers = [r["customer"] for r in selected.select("customer").limit(25).collect()]
-        if not selected_customers:
-            print("No records for selected filters.")
-            return
+    selected_customers = [r["customer"] for r in selected.select("customer").limit(25).collect()]
+    if not selected_customers:
+        print("No records for selected filters.")
+        return
 
-        orders = (
-            spark.table("orders")
-            .filter(F.col("customer").isin(selected_customers))
-            .orderBy(F.desc("order_date"))
-        )
-        print("Recent transactions")
-        display(orders.limit(100))
+    orders = (
+        spark.table("orders")
+        .filter(F.col("customer").isin(selected_customers))
+        .orderBy(F.desc("order_date"))
+    )
+    print("Recent transactions")
+    display(orders.limit(100))
 
-        feedback = (
-            spark.table("feedback_sentiment")
-            .filter(F.col("customer").isin(selected_customers))
-            .select("customer", "sentiment_label", "sentiment_score", "comment")
-        )
-        print("Voice of customer")
-        display(feedback.limit(100))
+    feedback = (
+        spark.table("feedback_sentiment")
+        .filter(F.col("customer").isin(selected_customers))
+        .select("customer", "sentiment_label", "sentiment_score", "comment")
+    )
+    print("Voice of customer")
+    display(feedback.limit(100))
 
 
 run_button.on_click(render_view)
